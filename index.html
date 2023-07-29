@@ -13,9 +13,9 @@
     <header>
         <div class="relative bg-[url('/img/header_bg.jpg')] bg-cover bg-center bg-no-repeat">
             <div class="absolute h-full bg-sky-600 inset-0 opacity-80"></div>
-            <div class="mx-auto flex justify-between items-center  bg-gray-800 text-white py-1 relative z-10 px-5">
-                <p><i class="fa-solid fa-plane"></i> COVID-19 update & travel requirements</p>
-                <div>
+            <div class="mx-auto md:flex justify-between items-center  bg-gray-800 text-white py-1 relative z-10 px-5">
+                <p class="text-center"><i class="fa-solid fa-plane"></i> COVID-19 update & travel requirements</p>
+                <div class="hidden md:block">
                     <ul class="flex">
                         <li class="border-r-2 border-dotted border-gray-700 px-2"><a href="#">Corporate Club</a></li>
                         <li class="border-r-2 border-dotted border-gray-700 px-2"><a href="#">Miles&Smiles</a></li>
@@ -31,31 +31,37 @@
                 <h2 class="text-white"><span class="text-4xl font-bold ">AAR</span> Travels <i
                         class="fa-solid fa-plane-departure text-lg"></i>
                 </h2>
-                <div class="flex items-center gap-4">
-                    <ul class="flex items-center">
-                        <li class="px-5"><a href="#">Home</a></li>
-                        <li class="px-5"><a href="#">About</a></li>
-                        <li class="px-5"><a href="#">Pages</a></li>
-                        <li class="px-5"><a href="#">Blog</a></li>
-                        <li class="px-5"><a href="#">Contact</a></li>
-                        <li class="pl-5"><a href="#">USD <span><i class="fa-solid fa-earth-americas"></i></span></a>
-                        </li>
-                        <li class="pl-5">
-                            <div
-                                class="h-[30px] w-[30px] border-2 border-white rounded-full flex justify-center items-center">
-                                <i class="fa-solid fa-question"></i>
-                            </div>
-                        </li>
-                    </ul>
-                    <button
-                        class="px-8 py-2 bg-sky-900 font-bold hover:bg-white hover:text-black rounded-lg">Register</button>
-                    <button class="px-8 py-2 bg-sky-900 font-bold hover:bg-white hover:text-black rounded-lg">Sign
-                        In</button>
+                <div class="block md:hidden">
+                    <i class="fa-solid fa-bars text-4xl"></i>
+                </div>
+                <div class="hidden md:block">
+                    <div class="flex items-center gap-4">
+                        <ul class="flex items-center">
+                            <li class="px-5"><a class="hover:text-sky-900" href="#">Home</a></li>
+                            <li class="px-5"><a class="hover:text-sky-900" href="#">About</a></li>
+                            <li class="px-5"><a class="hover:text-sky-900" href="#">Pages</a></li>
+                            <li class="px-5"><a class="hover:text-sky-900" href="#">Blog</a></li>
+                            <li class="px-5"><a class="hover:text-sky-900" href="#">Contact</a></li>
+                            <li class="pl-5"><a class="hover:text-sky-900" href="#">USD <span><i
+                                            class="fa-solid fa-earth-americas"></i></span></a>
+                            </li>
+                            <li class="pl-5">
+                                <div
+                                    class="h-[30px] w-[30px] border-2 border-white rounded-full flex justify-center items-center">
+                                    <i class="fa-solid fa-question"></i>
+                                </div>
+                            </li>
+                        </ul>
+                        <button
+                            class="px-8 py-2 bg-sky-900 font-bold hover:bg-white hover:text-black rounded-lg">Register</button>
+                        <button class="px-8 py-2 bg-sky-900 font-bold hover:bg-white hover:text-black rounded-lg">Sign
+                            In</button>
+                    </div>
                 </div>
             </div>
 
-            <div class="container relative text-white pb-[280px] mt-28">
-                <h1 class="text-5xl font-bold">A Lifetime of Discounts? It's Genius.</h1>
+            <div class="md:container relative text-white pb-[280px] mt-28 px-5">
+                <h1 class="text-2xl md:text-5xl font-bold">A Lifetime of Discounts? It's Genius.</h1>
                 <p class="text-[18px] py-4">Get rewarded for your travels – unlock instant savings of 10% or more with a
                     free
                     <br>
@@ -70,7 +76,7 @@
         </div>
 
 
-        <div class="relative mt-[-250px] container">
+        <div class="relative mt-[-250px] w-[90%] md:w-full mx-auto md:container">
             <div class="my-8  text-white font-bold">
                 <ul class="flex gap-8">
                     <li class=""><a href="#"><i class="fa-solid fa-plane"></i> Flights</a></li>
@@ -82,22 +88,22 @@
 
             <div class="bg-white rounded-2xl">
                 <div class="">
-                    <ul class="flex text-white font-bold">
+                    <ul class="md:flex text-white font-bold">
                         <li
-                            class="w-[25%] py-3 bg-emerald-800 flex justify-center hover:bg-white hover:text-emerald-800">
+                            class="md:w-[25%] py-3 bg-emerald-800 flex justify-center hover:bg-white hover:text-emerald-800">
                             <a href="#"><i class="fa-solid fa-plane"></i> Flights</a>
                         </li>
                         <li
-                            class="w-[25%] py-3 bg-emerald-800 flex justify-center hover:bg-white hover:text-emerald-800">
+                            class="md:w-[25%] py-3 bg-emerald-800 flex justify-center hover:bg-white hover:text-emerald-800">
                             <a href="#"><i class="fa-solid fa-car"></i>
                                 Car Rentals</a>
                         </li>
                         <li
-                            class="w-[25%] py-3 bg-emerald-800 flex justify-center hover:bg-white hover:text-emerald-800">
+                            class="md:w-[25%] py-3 bg-emerald-800 flex justify-center hover:bg-white hover:text-emerald-800">
                             <a href="#"><i class="fa-solid fa-gopuram"></i> Attractions</a>
                         </li>
                         <li
-                            class="w-[25%] py-3 bg-emerald-800 flex justify-center hover:bg-white hover:text-emerald-800">
+                            class="md:w-[25%] py-3 bg-emerald-800 flex justify-center hover:bg-white hover:text-emerald-800">
                             <a href="#"><i class="fa-solid fa-taxi"></i>
                                 Airport Taxis</a>
                         </li>
@@ -110,18 +116,18 @@
                         </p>
                     </div>
 
-                    <div class="w-[95%] mx-auto flex bg-emerald-200 py-3">
-                        <div class="w-[15%] flex items-center indent-5 border-r-2">
+                    <div class="w-[95%] mx-auto md:flex bg-emerald-200 py-3 rounded-md">
+                        <div class="md:w-[15%] flex items-center indent-5 md:border-r-2 border-b-2 py-2 md:py-0">
                             <p>From</p>
                         </div>
-                        <div class="w-[15%] flex items-center indent-5 border-r-2">
+                        <div class="md:w-[15%] flex items-center indent-5 md:border-r-2 border-b-2 py-2 md:py-0">
                             <p>To</p>
                         </div>
-                        <div class="w-[20%] indent-5 border-r-2">
+                        <div class="md:w-[20%] indent-5 md:border-r-2 border-b-2 py-2 md:py-0">
                             <p>Tip</p>
                             <p class="font-bold">Tour type</p>
                         </div>
-                        <div class="w-[25%] border-r-2 px-5">
+                        <div class="md:w-[25%] md:border-r-2 border-b-2 py-2 md:py-0 px-5">
                             <p class="flex justify-between">
                                 <span>Depart</span>
                                 <span class="pr-10">Return</span>
@@ -133,16 +139,16 @@
                                 <span class="font-bold">07/28/2023</span>
                             </p>
                         </div>
-                        <div class="w-[25%] indent-5">
+                        <div class="md:w-[25%] indent-5 py-2 md:py-0">
                             <p>Passenger/ Class</p>
                             <p class="font-bold">1 Passenger, Economy</p>
                         </div>
                     </div>
 
-                    <div class="flex items-center gap-8 py-5 justify-end w-[95%] mx-auto">
+                    <div class="flex items-center gap-5 py-5 justify-end w-[95%] mx-auto">
                         <p><a class="hover:text-sky-800" href="">+ Add Promo code</a></p>
                         <button
-                            class="px-5 py-3 bg-sky-900 hover:bg-white hover:text-sky-800 rounded-lg text-white">Show
+                            class="px-5 py-3 bg-sky-900 hover:bg-white hover:text-sky-800 rounded-lg text-white font-bold">Show
                             Flights <i class="fa-solid fa-plane-departure px-5"></i></button>
                     </div>
                 </div>
@@ -150,7 +156,7 @@
         </div>
     </header>
 
-    <section class="container mx-auto grid grid-cols-3 gap-10 my-20">
+    <section class="md:container mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 my-20 px-5">
         <div class="rounded-xl bg-white flex py-5 px-5">
             <div class="w-[30%] flex justify-center items-center">
                 <i class="fa-regular fa-comments text-[45px] text-sky-900"></i>
@@ -180,11 +186,11 @@
         </div>
     </section>
 
-    <section class="container mx-auto">
-        <div class="flex justify-between items-center">
+    <section class="md:container mx-auto px-5">
+        <div class="md:flex justify-center md:justify-between items-center">
             <div>
                 <p class="text-sky-800">OFFER DEALS</p>
-                <h2 class="text-4xl font-bold">Flight Offer Deals</h2>
+                <h2 class="text-2xl md:text-4xl font-bold">Flight Offer Deals</h2>
             </div>
             <div>
                 <p class="text-sky-800 font-bold"><a href="#">Best Price Guarantee <i
@@ -193,10 +199,10 @@
             </div>
         </div>
 
-        <div class="my-10 flex gap-10">
-            <div class="w-[50%] bg-white rounded-2xl">
+        <div class="my-10 md:flex gap-10">
+            <div class="md:w-[50%] bg-white rounded-2xl mb-5 md:mb-0">
                 <div class="">
-                    <img class="h-[750px] w-full object-cover rounded-t-2xl" src="/img/Air_5.jpg" alt="">
+                    <img class="h-[250px] md:h-[750px] w-full object-cover rounded-t-2xl" src="/img/Air_5.jpg" alt="">
                 </div>
                 <div class="p-5">
                     <div class="mb-5">
@@ -209,14 +215,14 @@
                 </div>
             </div>
 
-            <div class="w-[50%] grid grid-cols-2 grid-rows-2 gap-10">
+            <div class="md:w-[50%] grid grid-cols-2 grid-rows-2 gap-2 md:gap-10">
                 <div class="bg-white p-3 rounded-2xl">
                     <div class="">
-                        <img class="h-[250px] w-full object-cover rounded-2xl" src="/img/Air_1.jpg" alt="">
+                        <img class="h-[200px] md:h-[250px] w-full object-cover rounded-2xl" src="/img/Air_1.jpg" alt="">
                     </div>
-                    <div class="p-5">
+                    <div class="pt-3 md:p-5">
                         <div class="mb-5">
-                            <h2 class="text-2xl">Malaga to Finland</h2>
+                            <h2 class="text-lg md:text-2xl">Malaga to Finland</h2>
                             <p class="text-sky-800">09 Jun 2022 - 16 Jun 2022</p>
                         </div>
                         <div>
@@ -228,11 +234,11 @@
 
                 <div class="bg-white p-3 rounded-2xl">
                     <div class="">
-                        <img class="h-[250px] w-full object-cover rounded-2xl" src="/img/Air_4.jpg" alt="">
+                        <img class="h-[200px] md:h-[250px] w-full object-cover rounded-2xl" src="/img/Air_4.jpg" alt="">
                     </div>
-                    <div class="p-5">
+                    <div class="pt-3 md:p-5">
                         <div class="mb-5">
-                            <h2 class="text-2xl">Dubai to New York</h2>
+                            <h2 class="text-lg md:text-2xl">Dubai to New York</h2>
                             <p class="text-sky-800">09 Jun 2022 - 16 Jun 2022</p>
                         </div>
                         <div>
@@ -244,11 +250,11 @@
 
                 <div class="bg-white p-3 rounded-2xl">
                     <div class="">
-                        <img class="h-[250px] w-full object-cover rounded-2xl" src="/img/Air_3.jpg" alt="">
+                        <img class="h-[200px] md:h-[250px] w-full object-cover rounded-2xl" src="/img/Air_3.jpg" alt="">
                     </div>
-                    <div class="p-5">
+                    <div class="pt-3 md:p-5">
                         <div class="mb-5">
-                            <h2 class="text-2xl">Dubai to Maldives</h2>
+                            <h2 class="text-lg md:text-2xl">Dubai to Maldives</h2>
                             <p class="text-sky-800">09 Jun 2022 - 16 Jun 2022</p>
                         </div>
                         <div>
@@ -260,11 +266,11 @@
 
                 <div class="bg-white p-3 rounded-2xl">
                     <div class="">
-                        <img class="h-[250px] w-full object-cover rounded-2xl" src="/img/Air_5.jpg" alt="">
+                        <img class="h-[200px] md:h-[250px] w-full object-cover rounded-2xl" src="/img/Air_5.jpg" alt="">
                     </div>
-                    <div class="p-5">
+                    <div class="pt-3 md:p-5">
                         <div class="mb-5">
-                            <h2 class="text-2xl">Dhaka to Dubai</h2>
+                            <h2 class="text-lg md:text-2xl">Dhaka to Dubai</h2>
                             <p class="text-sky-800">09 Jun 2022 - 16 Jun 2022</p>
                         </div>
                         <div>
@@ -279,21 +285,22 @@
 
     <section class="relative bg-[url('/img/2nd_bg.jpg')] bg-cover bg-center bg-no-repeat text-white">
         <div class="absolute inset-0 bg-gradient-to-r from-sky-950"></div>
-        <div class="relative container mx-auto py-28">
-            <div class="w-[60%]">
+        <div class="relative md:container mx-auto py-28 px-5">
+            <div class="md:w-[60%]">
                 <div class="justify-start flex items-center">
                     <p class="py-2 px-6 rounded-full bg-emerald-800 font-bold text-white">Offer Deals</p>
                 </div>
                 <div>
-                    <h3 class="text-4xl py-2">Your Great Destination</h3>
+                    <h3 class="text-2xl md:text-4xl py-2">Your Great Destination</h3>
                 </div>
                 <div>
-                    <p class="text-[20px] font-bold p-5">Get rewarded for your travels – unlock instant savings of 10%
+                    <p class="text-[18px] md:font-bold py-5">Get rewarded for your travels – unlock instant savings of
+                        10%
                         or
                         more with a free Geairinfo.com
                         account</p>
                 </div>
-                <div class="grid grid-cols-2 gap-5">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                     <div class="flex justify-between items-center bg-white text-emerald-800 p-5 rounded-3xl">
                         <div>
                             <h2 class="text-4xl font-bold">5830+</h2>
@@ -314,33 +321,36 @@
                     </div>
                 </div>
                 <div class="pt-8">
-                    <p>Discover the latest offers & news and start planning<span
-                            class="py-2 px-6 rounded-full bg-emerald-800 font-bold text-white ml-5">contact us</span>
+                    <p class="flex">Discover the latest offers & news and start planning
+                    <div class="py-2 px-6 rounded-full bg-emerald-800 font-bold text-white my-3 w-1/2 md:w-1/4">
+                        contact
+                        us</div>
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="container mx-auto my-16">
+    <section class="md:container mx-auto my-16">
         <div class="text-center">
-            <div class="w-[60%] mx-auto">
+            <div class="md:w-[60%] mx-auto">
                 <p class="text-emerald-800">FLYNEXT PACKAGE</p>
-                <h3 class="text-4xl">Your Great Destination</h3>
-                <div class="my-8 pl-28">
-                    <ul class="flex gap-5">
-                        <li class="bg-sky-900 w-[25%] py-2 flex justify-center items-center text-white font-bold"><a
-                                href="#"><i class="fa-solid fa-plane"></i> Flights</a></li>
-                        <li class="bg-sky-900  w-[25%] py-2 flex justify-center items-center text-white font-bold"><a
-                                href="#"><i class="fa-solid fa-car"></i> Car Rentals</a></li>
-                        <li class="bg-sky-900  w-[25%] py-2 flex justify-center items-center text-white font-bold"><a
-                                href="#"><i class="fa-solid fa-taxi"></i> Taxis</a></li>
-                    </ul>
+                <h3 class="text-2xl md:text-4xl">Your Great Destination</h3>
+                <div class="my-8 flex gap-5 justify-center">
+                    <button
+                        class="bg-sky-900 p-2 flex justify-center items-center text-white font-bold rounded-lg hover:bg-white hover:text-sky-900"><i
+                            class="fa-solid fa-plane px-2"></i> Flights</button>
+                    <button
+                        class="bg-sky-900 p-2 flex justify-center items-center text-white font-bold rounded-lg hover:bg-white hover:text-sky-900"><i
+                            class="fa-solid fa-car px-2"></i> Car Rentals</button>
+                    <button
+                        class="bg-sky-900 p-2 flex justify-center items-center text-white font-bold rounded-lg hover:bg-white hover:text-sky-900"><i
+                            class="fa-solid fa-taxi px-2"></i> Taxis</button>
                 </div>
             </div>
         </div>
 
-        <div class="grid grid-cols-4 grid-rows-2 gap-10">
+        <div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-10 px-5 md:px-0">
             <div class="bg-white p-3 rounded-2xl">
                 <div class="">
                     <img class="h-[250px] w-full object-cover rounded-2xl" src="/img/1.jpg" alt="">
@@ -493,33 +503,35 @@
         <div class="relative bg-[url('/img/header_bg.jpg')] bg-cover bg-center bg-no-repeat">
             <div class="absolute h-full bg-sky-800 inset-0 opacity-80"></div>
 
-            <div class="relative flex justify-between py-20 container my-10">
+            <div class="relative flex justify-between py-20 md:container my-10 px-5">
                 <img src="/img/brand_img01.png" alt="">
                 <img src="/img/brand_img05.png" alt="">
                 <img src="/img/brand_img03.png" alt="">
-                <img src="/img/brand_img05.png" alt="">
-                <img src="/img/brand_img01.png" alt="">
-                <img src="/img/brand_img03.png" alt="">
+                <img class="hidden md:block" src="/img/brand_img05.png" alt="">
+                <img class="hidden md:block" src="/img/brand_img01.png" alt="">
+                <img class="hidden md:block" src="/img/brand_img03.png" alt="">
             </div>
         </div>
     </section>
 
-    <section class="container my-16">
-        <div class="flex justify-between mb-10">
+    <section class="md:container my-16">
+        <div class="flex justify-center md:justify-between mb-10 text-center md:text-start">
             <div>
                 <p class="text-emerald-800">WHY AIR GEAIR</p>
-                <h3 class="text-4xl font-bold py-2">Our Great Flight Options</h3>
+                <h3 class="text-2xl md:text-4xl font-bold py-2">Our Great Flight Options</h3>
             </div>
-            <div class="flex gap-5">
-                <div class="w-[45px] h-[45px] rounded-full flex justify-center items-center bg-white">
-                    <i class="fa-solid fa-arrow-right"></i>
-                </div>
-                <div class="w-[45px] h-[45px] rounded-full flex justify-center items-center bg-white">
-                    <i class="fa-solid fa-arrow-right"></i>
+            <div class="hidden md:block">
+                <div class="flex gap-5">
+                    <div class="w-[45px] h-[45px] rounded-full flex justify-center items-center bg-white">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <div class="w-[45px] h-[45px] rounded-full flex justify-center items-center bg-white">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="grid grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-5 md:px-0">
             <div class="bg-white p-8 rounded-2xl">
                 <div>
                     <img src="/img/service_icon01.png" alt="">
@@ -581,23 +593,24 @@
     </section>
 
     <section class="bg-white">
-        <div class="container py-16">
+        <div class="md:container py-16">
             <div class="text-center">
                 <p class="text-emerald-800">OUR NEWS FEEDS</p>
                 <h3 class="text-4xl font-bold py-2">Latest News Update</h3>
             </div>
-            <div class="flex gap-8 mt-10">
-                <div class="relative w-[50%]">
+            <div class="md:flex gap-8 mt-10">
+                <div class="relative md:w-[50%] p-5 md:p-0">
                     <img class="blur-[1px] h-[500px] w-full object-cover rounded-lg" src="/img/9.jpg" alt="">
                     <div class="absolute inset-x-0 z-10 bottom-0 p-8">
                         <p class="text-emerald-900">February 19, 2022</p>
-                        <h3 class="text-4xl font-bold py-2 text-emerald-900">Depending on your departure point
+                        <h3 class="text-2xl md:text-4xl font-bold py-2 text-emerald-900">Depending on your departure
+                            point
                             and
                             destination flights
                         </h3>
                     </div>
                 </div>
-                <div class="w-[50%]">
+                <div class="md:w-[50%] p-5 md:p-0">
                     <div class="flex gap-3 pb-3 border-b-2">
                         <div class="w-[30%]">
                             <img class="w-full h-[145px] rounded-xl" src="/img/10.jpg" alt="">
@@ -605,7 +618,8 @@
                         <div class="w-[70%] flex items-center">
                             <div>
                                 <p class="text-emerald-900">February 19, 2022</p>
-                                <h3 class="text-2xl font-bold py-2 text-emerald-900">Happy International Country Flight
+                                <h3 class="text-lg md:text-2xl font-bold py-2 text-emerald-900">Happy International
+                                    Country Flight
                                     Attendant Day</h3>
                             </div>
                         </div>
@@ -617,7 +631,8 @@
                         <div class="w-[70%] flex items-center">
                             <div>
                                 <p class="text-emerald-900">February 19, 2022</p>
-                                <h3 class="text-2xl font-bold py-2 text-emerald-900">The US is a Large Country and
+                                <h3 class="text-lg md:text-2xl font-bold py-2 text-emerald-900">The US is a Large
+                                    Country and
                                     Climate
                                     Varies by Region</h3>
                             </div>
@@ -630,7 +645,8 @@
                         <div class="w-[70%] flex items-center">
                             <div>
                                 <p class="text-emerald-900">February 19, 2022</p>
-                                <h3 class="text-2xl font-bold py-2 text-emerald-900">But There are Dozen of Low-cost
+                                <h3 class="text-lg md:text-2xl font-bold py-2 text-emerald-900">But There are Dozen of
+                                    Low-cost
                                     Airlines Including</h3>
                             </div>
                         </div>
@@ -641,7 +657,7 @@
     </section>
 
     <footer class="bg-gray-800">
-        <div class="grid grid-cols-4 gap-10 container py-20 text-white">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-10 md:container px-10 py-20 text-white">
             <div>
                 <h2 class="text-white"><span class="text-4xl font-bold ">AAR</span> Travels <i
                         class="fa-solid fa-plane-departure text-lg"></i>
@@ -685,31 +701,35 @@
                 </div>
             </div>
 
-            <div class="pl-16">
-                <h3 class="text-2xl font-bold">Privacy</h3>
-                <div class="py-8">
-                    <ul>
-                        <li><a href="">About us</a></li>
-                        <li><a href="">Awards</a></li>
-                        <li><a href="">Careers</a></li>
-                        <li><a href="">Press release</a></li>
-                        <li><a href="">Sponsorship</a></li>
-                    </ul>
+            <div class="flex justify-center">
+                <div>
+                    <h3 class="text-2xl font-bold">Privacy</h3>
+                    <div class="py-8">
+                        <ul>
+                            <li><a href="">About us</a></li>
+                            <li><a href="">Awards</a></li>
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Press release</a></li>
+                            <li><a href="">Sponsorship</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
-            <div>
-                <h3 class="text-2xl font-bold">Contacts</h3>
-                <p class="py-1">
-                    PO Box W75 Street lan West new queens
-                </p>
-                <span class="text-2xl font-bold text-sky-400 pb-1">+1 246 333 - 0079</span>
-                <span class="text-sky-400">geair@company.com</span>
+            <div class="flex justify-center">
+                <div>
+                    <h3 class="text-2xl font-bold">Contacts</h3>
+                    <p class="py-1">
+                        PO Box W75 Street lan West new queens
+                    </p>
+                    <span class="text-2xl font-bold text-sky-400 pb-1">+1 246 333 - 0079</span> <br>
+                    <span class="text-sky-400">geair@company.com</span>
 
-                <div class="flex gap-0 my-8">
-                    <input class="indent-5 leading-[45px] text-black" type="text" placeholder="Enter Your Email">
-                    <button class="bg-sky-400 h-[45px] w-[45px]"><i
-                            class="fa-solid fa-paper-plane text-[25px]"></i></button>
+                    <div class="flex gap-0 my-8">
+                        <input class="indent-5 leading-[45px] text-black" type="text" placeholder="Enter Your Email">
+                        <button class="bg-sky-400 h-[45px] w-[45px]"><i
+                                class="fa-solid fa-paper-plane text-[25px]"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
